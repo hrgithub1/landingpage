@@ -1,0 +1,138 @@
+/* Write some CSS below */
+body {
+  font-family: fantasy;
+  color: #808000;
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  /*font-family: sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*h2, h3 {
+  font-family: cursive;
+}
+*/
+
+a {
+  color: lightgreen;
+  text-decoration: none;
+  font-weight: 300;
+  transition: .4;
+}
+
+/*a:hover {
+  color: red;
+}
+*/
+.contain-cards-all {
+  width: 800px;
+  margin: auto;
+}
+
+.contain-cards-all h1 {
+  font-size: 24px;
+}
+
+.contain-cards-all h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.contain-cards-all h3 {
+  font-size: 15px;
+}
+
+.banner {
+  background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/cloud.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.banner p {
+  color: white;
+  font-size: 24px;
+}
+
+.button1 {
+  background-color: white;
+  color: grey;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button1:hover {
+  color: darkblue;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.footer {
+  background: lightgrey;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
+
+.around-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .around-cards {
+    grid-template-columns: 1fr;
+    grid
+  }
+
+  .around-cards {
+    width: auto;
+  }
+}
+/* Container media queries */
+@media (min-width: 500px) {
+  .contain-cards-all {
+    width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  .contain-cards-all {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contain-cards-all {
+    width: 800px;
+  }
+}
